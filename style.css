@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section {
+  padding: 1rem;
+  border: 2px dotted rgb(255, 255, 255);
+  margin: 1rem;
+  box-shadow: 0px 0px 10px rgb(43, 42, 42);
+  border-radius: 10px;
+}
+
+header {
+    background-color: grey;
+    color: #FFFFFF;
+    background-image: url("https://www.dvhn.nl/images/r4fegp-roker.jpg/ALTERNATES/WIDE_768/roker.jpg");
+    background-size: cover;
+    background-position: right;
+}
+
+aside {
+    background-color: green;
+    color: #FFFFFF;
+}
+
+.masthead {
+    margin: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    transition-duration: 0.4s;
+  }
+  
+  a:hover {
+    text-shadow: 0px 0px 5px white;
+    transition-duration: 0.4s;
+  }
+
+.titel {
+    margin-left: 20px;
+}
+
+.auteur {
+    margin-left: 20px;
+}
+
+.bron {
+    margin-left: 10px;
+}
+
+.validatie {
+    margin-left: 10px;
+}
+
+.anderesites {
+    margin-left: 10px;
+}
+
+.tagline {
+    margin: 20px;
+    margin-left: 20px;
+}
+
+footer {
+    background-color: grey;
+    color: #FFFFFF;
+}
+
+.lang {
+    background-color: pink;
+}
+
+section:nth-child(7) {
+    background-color: aliceblue;
+}
+
+@media screen and (min-width: 60em) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr .7fr;
+  }
+
+  header {
+    grid-column: 1/4;
+    background-image: url("https://gezondnu.nl/content/uploads/201737.gezondnu.stoppen-met-roken.jpg");
+  }
+
+  .lang {
+    grid-row: span 2;
+  }
+
+  section:nth-child(7) {
+    grid-column: span 2;
+  }
+
+  aside {
+    grid-column: 1/3;
+  }
+}
